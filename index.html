@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pravek - Drum Kit</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="keyboard">
+        <div class="keyboard__key" data-key="A">
+          A<span class="keyboard__key--sound-description">clap</span>
+        </div>
+        <div class="keyboard__key" data-key="S">
+          S<span class="keyboard__key--sound-description">hihat</span>
+        </div>
+        <div class="keyboard__key" data-key="D">
+          D<span class="keyboard__key--sound-description">kick</span>
+        </div>
+        <div class="keyboard__key" data-key="F">
+          F<span class="keyboard__key--sound-description">openhat</span>
+        </div>
+        <div class="keyboard__key" data-key="G">
+          G<span class="keyboard__key--sound-description">boom</span>
+        </div>
+        <div class="keyboard__key" data-key="H">
+          H<span class="keyboard__key--sound-description">ride</span>
+        </div>
+        <div class="keyboard__key" data-key="J">
+          J<span class="keyboard__key--sound-description">snare</span>
+        </div>
+        <div class="keyboard__key" data-key="K">
+          K<span class="keyboard__key--sound-description">tom</span>
+        </div>
+        <div class="keyboard__key" data-key="L">
+          L<span class="keyboard__key--sound-description">tink</span>
+        </div>
+      </div>
+    </main>
+
+    <audio src="sounds/clap.wav" data-key="A"></audio>
+    <audio src="sounds/hihat.wav" data-key="S"></audio>
+    <audio src="sounds/kick.wav" data-key="D"></audio>
+    <audio src="sounds/openhat.wav" data-key="F"></audio>
+    <audio src="sounds/boom.wav" data-key="G"></audio>
+    <audio src="sounds/ride.wav" data-key="H"></audio>
+    <audio src="sounds/snare.wav" data-key="J"></audio>
+    <audio src="sounds/tom.wav" data-key="K"></audio>
+    <audio src="sounds/tink.wav" data-key="L"></audio>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

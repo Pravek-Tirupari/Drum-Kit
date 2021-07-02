@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: white;
+  font-family: serif;
+}
+
+main {
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.keyboard {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard__key {
+  width: 130px;
+  height: 105px;
+  padding: 2rem;
+  padding-top: 1.6rem;
+  font-size: 4rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 4.5px solid black;
+  border-radius: 5px;
+  transition: all 0.07s;
+}
+
+.keyboard__key:not(:last-child) {
+  margin-right: 23px;
+}
+
+.keyboard__key--sound-description {
+  display: block;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #ffc600;
+  letter-spacing: 2px;
+}
+
+.playing {
+  border-color: #ffc600;
+  transform: scale(1.1);
+}
